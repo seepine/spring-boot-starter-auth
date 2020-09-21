@@ -39,7 +39,7 @@ public R login(@PathVariable String code) {
 ### 请求接口
 请求接口时，请求头中加上{'token':'xxxxxxxxxxxxxxxxxx'}`其中token后的字符串由登录接口获得`，即可在方法中通过AuthUtil.getUser()
 获取到当前登录者的用户信息
-```
+```java
 @GetMapping("/info")
 public R info() {
     Object obj = AuthUtil.getUser();
