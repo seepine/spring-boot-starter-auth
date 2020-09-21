@@ -20,7 +20,7 @@ easy auth for springboot
 ### 获取token
 在登录接口使用注解`@Login`，获取到用户信息后调用AuthUtil.loginSuccess，该方法将会返回用户token
 并且可传入不同用户信息，比如User，比如UserVo
-```
+```java
 @Login
 @GetMapping("/login/{username}/{password}")
 public R login(@PathVariable String username,@PathVariable String password) {
